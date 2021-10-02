@@ -1,0 +1,12 @@
+﻿@viewModel LongRunningOperationsSample.Services.LongRunningOperationStatus, LongRunningOperationsSample
+@baseType LongRunningOperationsSample.Controls.LongRunningProgress
+@js longRunningOperations
+
+<div Visible="{value: !IsCompleted}">
+
+    <div>
+        <strong Visible="{value: ProgressPercent != null}">{{value: ProgressPercent}}%</strong>
+    </div>
+    <div InnerText="{value: Status}" />
+
+</div>

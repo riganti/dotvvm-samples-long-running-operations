@@ -1,0 +1,9 @@
+﻿@viewModel LongRunningOperationsSample.ViewModels.DefaultViewModel, LongRunningOperationsSample
+@masterPage Views/MasterPage.dotmaster
+<dot:Content ContentPlaceHolderID="MainContent">
+
+	<dot:Button Text="Start operation" Click="{command: StartOperation()}" />
+
+	<cc:LongRunningProgress DataContext="{value: Status}" />
+
+</dot:Content>
